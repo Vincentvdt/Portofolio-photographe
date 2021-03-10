@@ -1,0 +1,209 @@
+html,
+* {
+  scroll-behavior: smooth;
+  font-family: Roboto, Lato, sans-serif !important;
+}
+
+.nav-custom {
+  min-height: 75px;
+}
+
+.yellow {
+  color: #e7e247 !important;
+}
+
+ion-icon {
+  font-size: 32px;
+}
+
+.menu-title {
+  letter-spacing: 0.097em;
+  font-weight: 600;
+  font-size: 1.4rem;
+  font-style: normal;
+}
+
+.nav-anchor {
+  font-weight: 500;
+  color: rgba(231, 226, 71, 0.7) !important;
+  transition: 0.2s ease-in-out;
+}
+.nav-anchor:hover {
+  color: #e7e247 !important;
+}
+
+.banner {
+  height: 850px;
+  background: url("src/img/banner.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.banner .banner-content {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 70%;
+  left: 50%;
+}
+.banner .banner-content .banner-text {
+  color: whitesmoke;
+}
+.banner .banner-content .btn-custom {
+  padding: 10px 40px;
+}
+
+@media (max-width: 991.98px) {
+  .aboutme-content {
+    overflow-y: scroll;
+  }
+}
+.about-me .aboutme-img {
+  background: url("src/img/aboutme.jpg") no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-color: blue;
+  filter: grayscale(100%);
+}
+.about-me .aboutme-content {
+  height: 600px;
+}
+.about-me .aboutme-content .aboutme-txt {
+  margin-top: 50px;
+  width: 100%;
+}
+.about-me .aboutme-media ion-icon {
+  color: #3d3b30;
+  font-size: 32px;
+}
+.about-me .aboutme-media ion-icon:hover {
+  color: #4d5061;
+}
+
+.go-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  overflow: hidden;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  transition: 0.2s ease-in-out;
+  border: 1px solid #3d3b30;
+}
+.go-top:hover {
+  background-color: lightgray;
+}
+.go-top .btn-top {
+  width: 50px;
+  height: 50px;
+  color: #3d3b30;
+  text-decoration: none;
+}
+.go-top .btn-top ion-icon {
+  position: relative;
+  top: 2%;
+}
+.go-top .btn-top p {
+  position: relative;
+  top: -10%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.portfolio {
+  color: #3d3b30;
+  position: relative;
+}
+.portfolio .galery-nav {
+  color: #3d3b30;
+  transition: 0.1s ease-in-out;
+}
+.portfolio .galery-nav:hover {
+  font-weight: bolder;
+}
+.portfolio .mosaique-col,
+.portfolio .mosaique-grid {
+  cursor: pointer;
+  margin-right: 5px;
+}
+.portfolio .card-custom {
+  width: 100%;
+  padding-bottom: 20px;
+  text-align: center;
+  border-radius: 0;
+  border: none;
+}
+.portfolio .card-img-top {
+  transition: 0.2s ease-in-out;
+}
+.portfolio .card-img-top:hover {
+  transform: scale(0.99);
+}
+
+.active {
+  font-weight: bolder !important;
+}
+
+.contact .form-required {
+  color: #bd3c3c;
+  font-weight: 700;
+}
+.contact .form-custom {
+  height: 45px;
+  line-height: 1.5 !important;
+  color: #495057 !important;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  padding: 10px;
+  transition: 0.5s ease-in-out;
+}
+.contact textarea.form-custom {
+  height: 180px;
+}
+.contact .submit-custom {
+  width: 175px;
+  background-color: #3d3b30;
+  border: none;
+  border-radius: 50px;
+  transition: 0.2s ease-in-out;
+}
+.contact .submit-custom p {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fffff4;
+  letter-spacing: 2px;
+  transition: 0.3s cubic-bezier(0.67, -1.15, 0.37, 2.02);
+  transform: translateX(10px);
+  margin: 7px 0;
+  padding: 0;
+}
+.contact .submit-custom ion-icon {
+  transform: translateX(30px);
+  opacity: 0;
+  transition: 0.3s cubic-bezier(0.67, -1.15, 0.37, 2.02);
+  color: #333333;
+  font-size: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .footer-custom {
+    overflow-y: scroll;
+  }
+}
+.footer {
+  background-color: #fafafa;
+}
+.footer .container .footer-info .footer-custom {
+  letter-spacing: 0.079em;
+  font-size: 0.9rem;
+}
+.footer .container .footer-link .nav-link {
+  padding: 0rem 1rem !important;
+  transition: 0.2s ease-in-out;
+}
+.footer .container .footer-link .nav-link:hover {
+  color: inherit !important;
+}
+
+/*# sourceMappingURL=style.css.map */

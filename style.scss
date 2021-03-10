@@ -1,0 +1,265 @@
+$primary-color: #e7e247;
+$primary-color2: #ffc14d;
+$secondary-color: #3d3b30;
+$banner-img: url("src/img/banner.jpg");
+$aboutme-img: url("src/img/aboutme.jpg");
+
+$transition: 0.2s ease-in-out;
+$translate: translate(-50%, -50%);
+
+html,
+* {
+  scroll-behavior: smooth;
+  font-family: Roboto, Lato, sans-serif !important;
+}
+
+.nav-custom {
+  min-height: 75px;
+}
+
+.yellow {
+  color: $primary-color !important;
+}
+
+ion-icon {
+  font-size: 32px;
+}
+
+.menu-title {
+  letter-spacing: 0.097em;
+  font-weight: 600;
+  font-size: 1.4rem;
+  font-style: normal;
+}
+
+.nav-anchor {
+  font-weight: 500;
+  color: rgba(231, 226, 71, 0.7) !important;
+  transition: $transition;
+
+  &:hover {
+    color: $primary-color !important;
+  }
+}
+
+.banner {
+  height: 850px;
+  background: $banner-img no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  .banner-content {
+    position: absolute;
+    transform: $translate;
+    top: 70%;
+    left: 50%;
+
+    .banner-text {
+      color: whitesmoke;
+    }
+
+    .btn-custom {
+      padding: 10px 40px;
+    }
+  }
+}
+
+// About me
+
+@media (max-width: 991.98px) {
+  .aboutme-content {
+    overflow-y: scroll;
+  }
+}
+
+.about-me {
+  .aboutme-img {
+    background: $aboutme-img no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-color: blue;
+    filter: grayscale(100%);
+  }
+
+  .aboutme-content {
+    height: 600px;
+
+    .aboutme-txt {
+      margin-top: 50px;
+      width: 100%;
+    }
+  }
+
+  .aboutme-media {
+    ion-icon {
+      color: $secondary-color;
+      font-size: 32px;
+
+      &:hover {
+        color: #4d5061;
+      }
+    }
+  }
+}
+
+// About me //
+
+// Portfolio
+
+.go-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  overflow: hidden;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  transition: $transition;
+  border: 1px solid $secondary-color;
+
+  &:hover {
+    background-color: lightgray;
+  }
+  .btn-top {
+    width: 50px;
+    height: 50px;
+    color: $secondary-color;
+    text-decoration: none;
+
+    ion-icon {
+      position: relative;
+      top: 2%;
+    }
+    p {
+      position: relative;
+      top: -10%;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+}
+
+.portfolio {
+  color: $secondary-color;
+  position: relative;
+
+  .galery-nav {
+    color: $secondary-color;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+      font-weight: bolder;
+    }
+  }
+
+  .mosaique-col,
+  .mosaique-grid {
+    cursor: pointer;
+    margin-right: 5px;
+  }
+
+  .card-custom {
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius: 0;
+    border: none;
+  }
+
+  .card-img-top {
+    transition: $transition;
+
+    &:hover {
+      transform: scale(0.99);
+    }
+  }
+}
+
+.active {
+  font-weight: bolder !important;
+}
+
+// Portfolio //
+
+// Contact
+.contact {
+  .form-required {
+    color: rgb(189, 60, 60);
+    font-weight: 700;
+  }
+
+  .form-custom {
+    height: 45px;
+    line-height: 1.5 !important;
+    color: #495057 !important;
+    background-color: #fff;
+    border-radius: 0.4rem;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+  }
+
+  textarea.form-custom {
+    height: 180px;
+  }
+
+  .submit-custom {
+    width: 175px;
+    background-color: $secondary-color;
+    border: none;
+    border-radius: 50px;
+    transition: 0.2s ease-in-out;
+
+    p {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fffff4;
+      letter-spacing: 2px;
+      transition: 0.3s cubic-bezier(0.67, -1.15, 0.37, 2.02);
+      transform: translateX(10px);
+      margin: 7px 0;
+      padding: 0;
+    }
+
+    ion-icon {
+      transform: translateX(30px);
+      opacity: 0;
+      transition: 0.3s cubic-bezier(0.67, -1.15, 0.37, 2.02);
+      color: #333333;
+      font-size: 20px;
+    }
+  }
+}
+
+// Contact //
+
+// Footer
+@media (max-width: 991.98px) {
+  .footer-custom {
+    overflow-y: scroll;
+  }
+}
+
+.footer {
+  background-color: rgb(250, 250, 250);
+  .container {
+    .footer-info {
+      .footer-custom {
+        letter-spacing: 0.079em;
+        font-size: 0.9rem;
+      }
+    }
+    .footer-link {
+      .nav-link {
+        padding: 0rem 1rem !important;
+        transition: $transition;
+
+        &:hover {
+          color: inherit !important;
+        }
+      }
+    }
+  }
+}
+// Footer /
